@@ -8,7 +8,7 @@ const App = () => {
   const [index, setIndex] = useState(1);
 
   const getData = async ()=>{
-    const resp = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=10`)
+    const resp = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=12`)
     setImgdata(resp.data);
   }
 
